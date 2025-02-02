@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>QGen</title>
+
+<!-- Fav Icon -->
+<link rel="icon" href="{{ url_for('static', filename='images/favicon-2.ico') }}" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="{{ url_for('static', filename='css/font-awesome-all.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/flaticon.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/owl.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/aos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/nice-select.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/elpath.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/color.css') }}" id="jssDefault" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/rtl.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/page-title.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/feature.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/clients.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/chooseus.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/cta.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/testimonial.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/faq.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="boxed_wrapper ltr">
+
+        <!-- preloader -->
+        <div class="loader-wrap">
+            <div class="preloader">
+                <div class="preloader-close">close</div>
+                <div id="handle-preloader" class="handle-preloader">
+                    <div class="animation-preloader">
+                        <div class="spinner"></div>
+                        <div class="txt-loading">
+                            <span data-text-preloader="a" class="letters-loading">
+                                Q
+                            </span>
+                            <span data-text-preloader="r" class="letters-loading">
+                                G
+                            </span>
+                            <span data-text-preloader="t" class="letters-loading">
+                                e
+                            </span>
+                            <span data-text-preloader="i" class="letters-loading">
+                                n
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+
+        <!-- page-direction -->
+        <div class="page_direction">
+            <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>
+            <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>
+        </div>
+        <!-- page-direction end -->
+
+        <!-- main header -->
+        <header class="main-header header-style-one">
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo2"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt=""></a>
+                                <h2>QGen</h2>
+                            </figure>
+                        </div>
+                        <div class="menu-area">
+                            <div class="mobile-nav-toggler">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                            </div>
+                            <nav class="main-menu navbar-expand-md navbar-light clearfix">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li class="current dropdown"><a href="{{ url_for('index') }}">Home</a></li>
+                                        <li><a href="{{ url_for('about') }}">About</a></li>
+                                        <li class="dropdown"><a href="{{ url_for('index') }}">Pages</a>
+                                            <ul>
+                                                 <li><a href="{{ url_for('service') }}">Our Services</a></li>
+                                                <li><a href="{{ url_for('faq') }}">FAQ's</a></li>
+                                                <li><a href="{{ url_for('error') }}">404</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="menu-right-content">
+                            <a href="{{ url_for('login') }}" class="login-btn mr_35">Login</a>
+                            <a href="{{ url_for('signup') }}" class="theme-btn btn-two"><span>Sign Up Free</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+        <!-- page-title -->
+        <section class="page-title about-page centred">
+            <div class="pattern-layer" style="background-image: url('{{ url_for('static', filename='images/shape/shape-28.png') }}');"></div>
+            <div class="auto-container">
+                <div class="content-box">
+                    <h1>About Us</h1>
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- page-title end -->
+
+        <!-- feature-style-two -->
+        <section class="feature-style-two about-page pt_50 pb_150">
+            <div class="auto-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+                        <div class="content_block_three">
+                            <div class="content-box mr_40">
+                                <div class="sec-title mb_25">
+                                    <span class="sub-title">What is AI in Education</span>
+                                    <h2>AI Question Generator Creates Questions from Any Educational Content</h2>
+                                </div>
+                                <div class="text-box">
+                                    <p>Our AI tool generates accurate and context-relevant questions from educational material. It can create everything from simple multiple-choice questions to complex open-ended ones.</p>
+                                    <ul class="list-style-one mb_40 clearfix">
+                                        <li>Generate original, high-quality questions tailored to your educational content</li>
+                                        <li>Our platform can be customized to suit your specific educational needs and domain</li>
+                                    </ul>
+                                    <a href="{{ url_for('contact') }}" class="theme-btn btn-one"><span>Contact Us</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 image-column">
+                        <div class="image_block_two">
+                            <div class="image-box pr_45 pt_40 pl_100 ml_40 pb_65">
+                                <figure class="image image-1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"><img src="{{ url_for('static', filename='images/resource/dashboard-3.jpg') }}" alt=""></figure>
+                                <figure class="image image-2" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="700"><img src="{{ url_for('static', filename='images/resource/dashboard-4.jpg') }}" alt=""></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- feature-style-two end -->
+
+        <!-- clients-section -->
+        <section class="clients-section">
+            <div class="auto-container">
+                <div class="five-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
+                    <figure class="clients-logo"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/clients/clients-8.png') }}" alt=""></a></figure>
+                    <figure class="clients-logo"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/clients/clients-9.png') }}" alt=""></a></figure>
+                    <figure class="clients-logo"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/clients/clients-10.png') }}" alt=""></a></figure>
+                    <figure class="clients-logo"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/clients/clients-11.png') }}" alt=""></a></figure>
+                    <figure class="clients-logo"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/clients/clients-12.png') }}" alt=""></a></figure>
+                </div>
+            </div>
+        </section>
+        <!-- clients-section end -->
+
+        <!-- chooseus-section -->
+        <section class="chooseus-section about-page pt_150 pb_150 centred">
+            <div class="auto-container">
+                <div class="sec-title mb_60">
+                    <span class="sub-title">AI Content</span>
+                    <h2>Why Choose QuestionGen</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-3 col-md-6 col-sm-12 chooseus-block">
+                        <div class="chooseus-block-one" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
+                            <div class="inner-box">
+                                <div class="icon-box"><i class="icon-15"></i></div>
+                                <h3><a href="{{ url_for('index') }}">AI-Powered Question Generation</a></h3>
+                                <p>Unlock the potential of AI to automatically generate educational questions, saving time and enhancing the learning experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chooseus-block">
+                        <div class="chooseus-block-one" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                            <div class="inner-box">
+                                <div class="icon-box"><i class="icon-16"></i></div>
+                                <h3><a href="{{ url_for('index') }}">In-depth Question Context</a></h3>
+                                <p>Our AI not only creates questions but also ensures they are contextually relevant, helping users deepen their understanding of the material.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chooseus-block">
+                        <div class="chooseus-block-one" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1100">
+                            <div class="inner-box">
+                                <div class="icon-box"><i class="icon-17"></i></div>
+                                <h3><a href="{{ url_for('index') }}">Paraphrase and Rewriting</a></h3>
+                                <p>Generate a variety of questions using paraphrasing techniques to offer diverse learning experiences and avoid repetition.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 chooseus-block">
+                        <div class="chooseus-block-one" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1300">
+                            <div class="inner-box">
+                                <div class="icon-box"><i class="icon-18"></i></div>
+                                <h3><a href="{{ url_for('index') }}">Customize Question Styles</a></h3>
+                                <p>Tailor the format and style of the generated questions to meet the specific needs of your educational app or platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- chooseus-section end -->
+
+        <!-- cta-section -->
+        <section class="cta-section">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="shape" style="background-image: url('{{ url_for('static', filename='images/shape/shape-29.png') }}');"></div>
+                    <figure class="image-layer"><img src="{{ url_for('static', filename='images/resource/cta-1.png') }}" alt=""></figure>
+                    <div class="content-box">
+                        <div class="sec-title light mb_15">
+                            <span class="sub-title two">Sign Up Now</span>
+                            <h2>Imagine AI could Free</h2>
+                        </div>
+                        <div class="text-box">
+                            <p>Get started now and explore how our platform can help you create relevant and high-quality questions for your educational content.</p>
+                            <a href="{{ url_for('index') }}" class="theme-btn btn-one"><span>Sign Up Free <i class="icon-7"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cta-section end -->
+
+        <!-- main-footer -->
+        <footer class="main-footer style-two">
+            <div class="auto-container">
+                <div class="widget-section">
+                    <div class="row clearfix">
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget logo-widget">
+                                <figure class="logo"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo-3.png') }}" alt=""></a>
+                                <h2>QGen</h2>
+                                </figure>
+                                <p>Our platform uses AI to generate high-quality educational questions from various content, enhancing learning through interactive quizzes, tests, and lessons.</p>
+                                <ul class="social-links clearfix">
+                                    <li><a href="{{ url_for('index') }}"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="{{ url_for('index') }}"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="{{ url_for('index') }}"><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href="{{ url_for('index') }}"><i class="fa-brands fa-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ml_50">
+                                <div class="widget-title">
+                                    <h3>Quick Link</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="{{ url_for('about') }}">About Us</a></li>
+                                        <li><a href="{{ url_for('service') }}">Services</a></li>
+                                        <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ml_30">
+                                <div class="widget-title">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="{{ url_for('index') }}">Privacy Policy</a></li>
+                                        <li><a href="{{ url_for('index') }}">Terms & Condition</a></li>
+                                        <li><a href="{{ url_for('index') }}">Support</a></li>
+                                        <li><a href="{{ url_for('index') }}">Disclaimer</a></li>
+                                        <li><a href="{{ url_for('faq') }}">Faq</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget contact-widget">
+                                <div class="widget-title">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <p>Feel free to reach out for any inquiries or support.</p>
+                                    <ul class="contact-info clearfix">
+                                        <li>
+                                            <i class="icon-28"></i>
+                                            EST Dakhla, Morocco
+                                        </li>
+                                        <li>
+                                            <i class="icon-29"></i>
+                                            <a href="mailto:QGen@gmail.com">QGen@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-30"></i>
+                                            <a href="tel:+2125551234567">(+212) 555-123-4567</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom centred">
+                <p>Copyright &copy; 2025 <a href="{{ url_for('index') }}">QGen</a>, Inc. All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- main-footer end -->
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top">
+            <div>
+                <div class="scroll-top-inner">
+                    <div class="scroll-bar">
+                        <div class="bar-inner"></div>
+                    </div>
+                    <div class="scroll-bar-text">Go To Top</div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to top end -->
+
+    </div>
+
+    <!-- jQuery plugins -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.fancybox.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/appear.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+
+    <!-- main-js -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>

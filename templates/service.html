@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>Artiq - HTML 5 Template Preview</title>
+
+<!-- Fav Icon -->
+<link rel="icon" href="{{ url_for('static', filename='images/favicon-2.ico') }}" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="{{ url_for('static', filename='css/font-awesome-all.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/flaticon.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/owl.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/jquery.fancybox.min.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/aos.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/nice-select.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/jquery-ui.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/elpath.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/color.css') }}" id="jssDefault" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/rtl.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/page-title.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/service.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/cta.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/process.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/module-css/pricing.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet">
+
+</head>
+
+
+<!-- page wrapper -->
+<body>
+
+    <div class="boxed_wrapper ltr">
+
+        <!-- preloader -->
+        <div class="loader-wrap">
+            <div class="preloader">
+                <div class="preloader-close">close</div>
+                <div id="handle-preloader" class="handle-preloader">
+                    <div class="animation-preloader">
+                        <div class="spinner"></div>
+                        <div class="txt-loading">
+                            <span data-text-preloader="a" class="letters-loading">
+                                Q
+                            </span>
+                            <span data-text-preloader="r" class="letters-loading">
+                                G
+                            </span>
+                            <span data-text-preloader="t" class="letters-loading">
+                                e
+                            </span>
+                            <span data-text-preloader="i" class="letters-loading">
+                                n
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+
+        <!-- page-direction -->
+        <div class="page_direction">
+            <div class="demo-rtl direction_switch"><button class="rtl">RTL</button></div>
+            <div class="demo-ltr direction_switch"><button class="ltr">LTR</button></div>
+        </div>
+        <!-- page-direction end -->
+
+        <!-- main header -->
+        <header class="main-header header-style-two">
+            <!-- header-lower -->
+            <div class="header-lower">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo2"><a href="index.html"><img src="{{ url_for('static', filename='images/logo-3.png') }}" alt=""></a>
+                                <h2>QGen</h2>
+                        </div>
+                        <div class="menu-area">
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler">
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                                <i class="icon-bar"></i>
+                            </div>
+                            <nav class="main-menu navbar-expand-md navbar-light clearfix">
+                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                                    <ul class="navigation clearfix">
+                                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                                        <li><a href="{{ url_for('about') }}">About</a></li>
+                                        <li class="current dropdown"><a href="index.html">Pages</a>
+                                            <ul>
+                                                <li><a href="{{ url_for('service') }}">Our Service</a></li>
+                                                <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+                                                <li><a href="{{ url_for('team') }}">Our team</a></li>
+                                                <li><a href="{{ url_for('error') }}">404</a></li>
+
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="menu-right-content">
+                            <a href="index.html" class="login-btn mr_35">Login</a>
+                            <a href="index.html" class="theme-btn btn-one"><span>Sign Up Free</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="outer-box">
+                        <div class="logo-box">
+                            <figure class="logo2"><a href="index.html"><img src="{{ url_for('static', filename='images/logo-3.png') }}" alt=""></a>
+                                <h2>QGen</h2>
+                        </div>
+                        <div class="menu-area">
+                            <nav class="main-menu clearfix">
+                                <!--Keep This Empty / Menu will come through Javascript-->
+                            </nav>
+                        </div>
+                        <div class="menu-right-content">
+                            <a href="index.html" class="login-btn mr_35">Login</a>
+                            <a href="index.html" class="theme-btn btn-one"><span>Sign Up Free</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- main-header end -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="{{ url_for('static', filename='images/logo-3.png') }}" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                <div class="contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Chicago 12, Melborne City, USA</li>
+                        <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                        <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+        <!-- page-title -->
+        <section class="page-title centred">
+            <div class="auto-container">
+                <div class="content-box">
+                    <h1>Our Services</h1>
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
+                        <li>Our Services</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- page-title end -->
+
+        <!-- service-section -->
+        <section class="service-section service-page pt_150 pb_120 centred">
+            <div class="auto-container">
+                <div class="sec-title mb_60">
+                    <span class="sub-title">AI Content</span>
+                    <h2>Industries for AI Content</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one">
+                            <div class="inner-box">
+                                <div class="icon-box"><i class="icon-22"></i></div>
+                                <h3><a href="index-2.html">Blog & News Article</a></h3>
+                                <p>With our AI, you can generate unique and high-quality educational questions, enhancing learning experiences like never before</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one">
+                            <div class="inner-box">
+                                <div class="icon-box"><i class="icon-23"></i></div>
+                                <h3><a href="index-2.html">Ecommerce Description</a></h3>
+                                <p>With our AI, you can generate unique and high-quality educational questions, enhancing learning experiences like never before</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                        <div class="service-block-one">
+                            <div class="inner-box">
+                                <div class="icon-box"><i class="icon-24"></i></div>
+                                <h3><a href="index-2.html">Social Media Post</a></h3>
+                                <p>With our AI, you can generate unique and high-quality educational questions, enhancing learning experiences like never before</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service-section end -->
+
+        <!-- cta-style-three -->
+        <section class="cta-style-three pt_95 pb_95">
+            <figure class="image-layer"><img src="{{ url_for('static', filename='images/resource/cta-2.png') }}" alt=""></figure>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="col-xl-5 col-lg-12 col-md-12 offset-xl-7 content-column">
+                        <div class="content-box">
+                            <div class="sec-title light mb_20">
+                                <span class="sub-title">Questions & Learning</span>
+                                <h2>Generate unlimited educational questions</h2>
+                            </div>
+                            <div class="text-box">
+                                <p>Our AI-powered tool creates diverse and high-quality questions for various learning needs, from quizzes to interactive assessments.</p>
+                                <a href="index-3.html" class="theme-btn btn-one"><span>Try It Now</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cta-style-three end -->
+
+        <!-- process-style-two -->
+        <section class="process-style-two pt_150 pb_150 centred">
+            <div class="auto-container">
+                <div class="sec-title mb_60">
+                    <span class="sub-title">Our Process</span>
+                    <h2>Easy Process to Create Educational Questions</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 processing-block">
+                        <div class="processing-block-two">
+                            <div class="inner-box">
+                                <span class="count-text">1</span>
+                                <h3>Join the Platform</h3>
+                                <p>Get started by signing up to our platform. Check our documentation for a step-by-step guide to help you through the process</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 processing-block">
+                        <div class="processing-block-two">
+                            <div class="inner-box">
+                                <span class="count-text">2</span>
+                                <h3>Join our Community</h3>
+                                <p>Join our community of educators and developers to share ideas, ask questions, and collaborate on improving the question-generation process</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 processing-block">
+                        <div class="processing-block-two">
+                            <div class="inner-box">
+                                <span class="count-text">3</span>
+                                <h3>Generate Questions Through Prompts</h3>
+                                <p>Simply provide a prompt, and our AI will generate relevant educational questions for your app. Check our documentation to see if your query has already been answered.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more-btn">
+                    <a href="index-3.html" class="theme-btn btn-three"><span>Join the Discord</span></a>
+                </div>
+            </div>
+        </section>
+        <!-- process-style-two end -->
+
+        <!-- pricing-style-two -->
+        <section class="pricing-style-two service-page pb_120 centred">
+            <div class="auto-container">
+                <div class="sec-title mb_60">
+                    <span class="sub-title">Pricing Plans</span>
+                    <h2>Our Affordable Pricing</h2>
+                </div>
+                <div class="row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                        <div class="pricing-block-two" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700">
+                            <div class="pricing-table">
+                                <div class="table-header mb_20">
+                                    <h5>Personal Plan</h5>
+                                    <p>For bloggers, freelancers & businesses</p>
+                                    <h2>$29<span>/Month</span></h2>
+                                </div>
+                                <div class="btn-box mb_40">
+                                    <a href="index-2.html">Choose Plan</a>
+                                </div>
+                                <div class="table-content">
+                                    <ul class="feature-list clearfix">
+                                        <li>Up to 10 Team Members</li>
+                                        <li>Unlimited Usage</li>
+                                        <li>Unlimited Drive Storage</li>
+                                        <li>Concierge Help Center</li>
+                                        <li>Smart Brand Personas</li>
+                                        <li>Custom AI Brand Models</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                        <div class="pricing-block-two active-block" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                            <div class="pricing-table">
+                                <div class="table-header mb_20">
+                                    <h5>Business Plan</h5>
+                                    <p>For bloggers, freelancers & businesses</p>
+                                    <h2>$39<span>/Month</span></h2>
+                                </div>
+                                <div class="btn-box mb_40">
+                                    <a href="index-2.html">Choose Plan</a>
+                                </div>
+                                <div class="table-content">
+                                    <ul class="feature-list clearfix">
+                                        <li>Up to 10 Team Members</li>
+                                        <li>Unlimited Usage</li>
+                                        <li>Unlimited Drive Storage</li>
+                                        <li>Concierge Help Center</li>
+                                        <li>Smart Brand Personas</li>
+                                        <li>Custom AI Brand Models</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 pricing-block">
+                        <div class="pricing-block-two" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1100">
+                            <div class="pricing-table">
+                                <div class="table-header mb_20">
+                                    <h5>Advance Plan</h5>
+                                    <p>For bloggers, freelancers & businesses</p>
+                                    <h2>$59<span>/Month</span></h2>
+                                </div>
+                                <div class="btn-box mb_40">
+                                    <a href="index-2.html">Choose Plan</a>
+                                </div>
+                                <div class="table-content">
+                                    <ul class="feature-list clearfix">
+                                        <li>Up to 10 Team Members</li>
+                                        <li>Unlimited Usage</li>
+                                        <li>Unlimited Drive Storage</li>
+                                        <li>Concierge Help Center</li>
+                                        <li>Smart Brand Personas</li>
+                                        <li>Custom AI Brand Models</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- pricing-style-two end -->
+
+        <!-- cta-style-two -->
+        <section class="cta-style-two">
+            <div class="auto-container">
+                <div class="inner-container">
+                    <div class="shape" style="background-image: url({{ url_for('static', filename='images/shape/shape-9.png') }});"></div>
+                    <div class="text-box">
+                        <h2>Ready to take your content creation</h2>
+                        <p>With our AI your the can makes the is never before seen images fores New Year any of copy.</p>
+                    </div>
+                    <div class="btn-box">
+                        <a href="index-2.html" class="theme-btn btn-one"><span>Get Started</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cta-style-two end -->
+
+        <!-- main-footer -->
+        <footer class="main-footer style-two">
+            <div class="auto-container">
+                <div class="widget-section">
+                    <div class="row clearfix">
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget logo-widget">
+                                <figure class="logo"><a href="index.html"><img src="{{ url_for('static', filename='images/logo-3.png') }}" alt=""></a>
+                                <h2>QGen</h2>
+                                </figure>
+                                <p>Our platform uses AI to generate high-quality educational questions from various content, enhancing learning through interactive quizzes, tests, and lessons.</p>
+                                <ul class="social-links clearfix">
+                                    <li><a href="index.html"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="index.html"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="index.html"><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href="index.html"><i class="fa-brands fa-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ml_50">
+                                <div class="widget-title">
+                                    <h3>Quick Link</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="service.html">Services</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget links-widget ml_30">
+                                <div class="widget-title">
+                                    <h3>Usefull Links</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="links-list clearfix">
+                                        <li><a href="index.html">Privacy Policy</a></li>
+                                        <li><a href="index.html">Terms & Condition</a></li>
+                                        <li><a href="index.html">Support</a></li>
+                                        <li><a href="index.html">Disclaimer</a></li>
+                                        <li><a href="faq.html">Faq</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                            <div class="footer-widget contact-widget">
+                                <div class="widget-title">
+                                    <h3>Contact</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <p>Feel free to reach out for any inquiries or support.</p>
+                                    <ul class="contact-info clearfix">
+                                        <li>
+                                            <i class="icon-28"></i>
+                                            EST Dakhla, Morocco
+                                        </li>
+                                        <li>
+                                            <i class="icon-29"></i>
+                                            <a href="mailto:example@info.com">QGen@gmail.com</a>
+                                        </li>
+                                        <li>
+                                            <i class="icon-30"></i>
+                                            <a href="tel:3336660000">(+212) 555-123-4567</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom centred">
+                <p>Copyright &copy; 2025 <a href="index.html">QGen</a>, Inc. All Rights Reserved</p>
+            </div>
+        </footer>
+        <!-- main-footer end -->
+
+        <!--Scroll to top-->
+        <div class="scroll-to-top">
+            <div>
+                <div class="scroll-top-inner">
+                    <div class="scroll-bar">
+                        <div class="bar-inner"></div>
+                    </div>
+                    <div class="scroll-bar-text">Go To Top</div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll to top end -->
+
+    </div>
+
+    <!-- jQuery plugins -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/wow.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.fancybox.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/appear.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/isotope.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/product-filter.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bxslider.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.bootstrap-touchspin.js') }}"></script>
+
+    <!-- main-js -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body><!-- End of .page_wrapper -->
+</html>

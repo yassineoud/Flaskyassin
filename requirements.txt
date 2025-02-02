@@ -1,0 +1,4 @@
+Flask==2.0.3
+transformers==4.26.0
+torch==1.12.1
+nltk==3.7
