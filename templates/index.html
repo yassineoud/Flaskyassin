@@ -123,48 +123,39 @@
                 <div class="pattern-1" style="background-image: url('{{ url_for('static', filename='images/shape/shape-1.png') }}');"></div>
             </div>
             <div class="auto-container">
-                <div class="content-box">
-                    <span class="sub-title">Question Generator</span>
-                    <h2>Generate AI questions online using Artificial Intelligence</h2>
-                    <p>The AI-powered question generator that transforms educational content into engaging questions through automation</p>
-                    <div class="form-inner">
-                        <form method="post" action="{{ url_for('index') }}">
-                            <div class="form-group">
-                                <input type="text" name="text-field" placeholder="Enter text" required>
-                                <button type="submit" class="theme-btn btn-two"><span>Generate</span></button>
-                            </div>
-                        </form>
-                    </div>
+            <div class="content-box">
+                <span class="sub-title">Question Generator</span>
+                <h2>Generate AI questions online using Artificial Intelligence</h2>
+                <p>The AI-powered question generator that transforms educational content into engaging questions through automation</p>
+                <div class="form-inner">
+                    <form method="post" action="{{ url_for('index') }}">
+                        <div class="form-group">
+                            <input type="text" name="text-field" placeholder="Enter text" required>
+                            <button type="submit" class="theme-btn btn-two"><span>Generate</span></button>
+                        </div>
+                    </form>
                 </div>
-            </div>
+        </div>
+    </div>
         </section>
         <!-- banner-section end -->
 
-        <!-- feature-image -->
-        <section class="feature-image">
-            <div class="outer-container">
-                <div class="row clearfix">
-                    <div class="col-lg-2 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box"><img src="{{ url_for('static', filename='images/resource/feature-1.jpg') }}" alt=""></figure>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box"><img src="{{ url_for('static', filename='images/resource/feature-2.jpg') }}" alt=""></figure>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box"><img src="{{ url_for('static', filename='images/resource/feature-3.jpg') }}" alt=""></figure>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box"><img src="{{ url_for('static', filename='images/resource/feature-4.jpg') }}" alt=""></figure>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box"><img src="{{ url_for('static', filename='images/resource/feature-5.jpg') }}" alt=""></figure>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 image-column">
-                        <figure class="image-box"><img src="{{ url_for('static', filename='images/resource/feature-6.jpg') }}" alt=""></figure>
-                    </div>
+       <!-- feature-image -->
+<section class="feature-image">
+    <div class="outer-container">
+        <div class="row justify-content-center clearfix">
+            <div class="col-12">
+                {% for question in questions %}
+                <div class="question-box text-center my-2">
+                    <h2 style="color: white">{{ question }}</h2>
                 </div>
+                {% endfor %}
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
+
         <!-- feature-image end -->
 
         <!-- feature-section -->
@@ -503,7 +494,7 @@
             <div class="row clearfix">
                 <div class="col-lg-6 col-md-12 col-sm-12 footer-column">
                     <div class="footer-widget logo-widget">
-                        <figure class="logo"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.jpg') }}" alt=""></a>
+                        <figure class="logo"><a href="{{ url_for('index') }}"><img src="{{ url_for('static', filename='images/logo.png') }}" alt=""></a>
                             <h2>QGen</h2>
                         </figure>
                         <p>Our AI-powered tool simplifies the creation of educational questions. Check our documentation to see if we've already answered your questions.</p>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link href="{{ url_for('static', filename='css/module-css/login.css') }}" rel="stylesheet"></head>
+<body>
+
+<div class="demi1">
+
+    <figure class="logo"><a href="index.html"><img src="{{ url_for('static', filename='images/logo.png') }}" ></a>
+                                <h2 class="logoTT">QGen</h2>
+                                </figure>
+
+<h1 class="titre">Automatic Question Generation</h1>
+     <img class="image1" src="{{ url_for('static', filename='images/image1.png') }}" >
+    <div class="iff">
+        <p>if you don't have an account you </p><p class="col">  register here!</p>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+  <div class="info">
+    <h1 class="Signup">Sign in</h1>
+
+     <form method="POST">
+
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <input type="submit" value=" Sign in">
+
+        <div class="already">
+            <p>Create account :</p>
+            <li><a href="{{ url_for('signup') }}">Sign up</a></li>
+
+        </div>
+
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+        {% if success %}
+        <p class="success">{{ success }}</p>
+        {% endif %}
+    </form>
+
+
+</div>
+
+
+</body>
+</html>

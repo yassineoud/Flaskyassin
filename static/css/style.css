@@ -56,7 +56,16 @@
   padding:0px;
   border:none;
   outline:none;
+}
+.question-box {
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+}
 
+.question-box text-center h2{
+  color:white;
 }
 
 
@@ -1991,42 +2000,3 @@ button.ltr {
   0% { -webkit-transform: translateX(0%); }
   100% { -webkit-transform: translateX(-100%); }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

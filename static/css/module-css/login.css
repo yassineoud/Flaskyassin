@@ -1,0 +1,142 @@
+/* Définir des styles de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+}
+
+.image1{
+    margin-left: 180px;
+    margin-top: 60px;
+}
+
+.Signup{
+    text-align: center;
+}
+
+.logo{
+    margin-left: -110px;
+    display: flex;
+
+}
+
+/* Conteneur du formulaire */
+h2 {
+
+    color:white;
+    margin-top: 10px;
+}
+.already{
+    display: flex;
+}
+
+
+.info {
+    background-color: #fff;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    height: 637px;
+    margin-left: 16px;
+
+}
+.titre{
+    color: #FC9676;
+    text-align: center;
+    margin-top: 90px;
+}
+.demi1{
+    background-color: black;
+    width: 720px;
+}
+img{
+    margin-left: 100px;
+}
+
+li{
+    list-style: none;
+    margin-top: 15px;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: #FC9676;
+
+}
+.already{
+    text-align: center;
+    margin-left: 240px;
+}
+
+/* Styles pour les champs du formulaire */
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #FC9676;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+}
+
+/* Ajout d'un peu d'espace entre les champs et les boutons */
+input[type="submit"] {
+    margin-top: 10px;
+}
+
+.iff {
+    color: white;
+    display: flex;
+    margin-left: 170px;
+    margin-top: 90px;
+}
+.col{
+    color: #FC9676;
+    margin-left: 10px;
+}
+
+
+
+
+/* Styles pour les messages */
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.success {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    margin-top: -5px;
+}

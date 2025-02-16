@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link href="{{ url_for('static', filename='css/module-css/signup.css') }}" rel="stylesheet">
+</head>
+<body>
+
+<div class="demi1">
+    <figure class="logo">
+        <a href="index.html"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
+        <h2 class="logoTT">QGen</h2>
+    </figure>
+
+    <h1 class="titre">Automatic Question Generation</h1>
+    <img class="image1" src="{{ url_for('static', filename='images/image1.png') }}" alt="Image">
+    <div class="iff">
+        <p>If you don't have an account, you </p><p class="col"> register here!</p>
+    </div>
+</div>
+
+<div class="info">
+    <h1 class="Signup">Sign up</h1>
+
+    <form method="POST">
+        <label for="firstname">First name:</label><br>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <label for="lastname">Last name:</label><br>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirmpassword">Confirm Password:</label><br>
+        <input type="password" id="confirmpassword" name="confirmpassword" required><br><br>
+
+        <input type="submit" value="Sign up">
+
+        <div class="already">
+            <p>Already have an account?</p>
+            <li><a href="{{ url_for('login') }}">Sign in</a></li>
+
+        </div>
+
+        {% if error %}
+        <p class="error">{{ error }}</p>
+        {% endif %}
+        {% if success %}
+        <p class="success">{{ success }}</p>
+        {% endif %}
+    </form>
+</div>
+
+<script>
+document.querySelector("form").addEventListener("submit", function(event) {
+    let password = document.getElementById("password").value;
+    let confirmPassword = document.getElementById("confirmpassword").value;
+
+    if (password !== confirmPassword) {
+        event.preventDefault(); // Prevent form submission
+        document.querySelector(".error").textContent = "Les mots de passe ne correspondent pas !";  // Show error message on page
+    }
+});
+</script>
+
+</body>
+</html>
