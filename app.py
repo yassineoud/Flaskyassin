@@ -183,6 +183,12 @@ def login():
 
     return render_template('login.html')
 
+@app.route('/delete_question/<question_text>', methods=['POST'])
+def delete_question(question_text):
+    global questions
+    questions = [q for q in questions if q != question_text]  # Retirer la question de la liste
+    return redirect(url_for('index'))  # Rediriger vers la page d'accueil après la suppression
+
 
 # Route pour se déconnecter
 @app.route('/logout')
@@ -246,7 +252,11 @@ def privacy_policy():
 def disclaimer():
     return render_template('disclaimer.html')
 
+@app.route('/')
+def home():
+    return render_template('home.html')
+
 
 # Lancement de l'application
-if __name__ == '__main__':
+if __name__ == '_main_':
     app.run(debug=True)
